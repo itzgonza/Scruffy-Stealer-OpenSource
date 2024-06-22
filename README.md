@@ -1,9 +1,8 @@
-# Scruffy-Stealer-OpenSource
-
-<p align="center">
+<div align="center">
+  <h1>Scruffy-Stealer-OpenSource</h1>
   <b>open source version, made in 2022</b> <br>
   <i>a stealer written in java, logs will be sent to your webhook.</i>
-</p>
+</div>
 
 #
 
